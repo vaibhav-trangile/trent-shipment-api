@@ -116,6 +116,7 @@ public class WmsRepositoryImpl implements WmsRepository{
 	        psHead.setString(15, dto.getSusr3());
 	        psHead.setString(16, dto.getSusr4());
 	        psHead.setString(17, dto.getSusr5());
+	        psHead.setString(18, AppConstants.API_NAME);
 	        psHead.executeUpdate();
 	    } catch (SQLException e) {
 	    	logger.error("Failed to insert head data() :: {}", e);
